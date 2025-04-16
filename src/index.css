@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+        
+body{
+  background-color: #0a0a0a;
+  color: #f3f4f6;
+  font-family: 'Space Grotesk', sans-serif;
+  min-height: 100vh;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #00bafe, #66d8ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
