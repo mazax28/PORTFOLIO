@@ -1,16 +1,16 @@
 import React from 'react'
 function About() {
   return (
-<div className="hero  min-h-screen">
-  <div className="hero-content text-center">
-    <div className="max-w-6xl">
+<div id="about" className="hero  min-h-screen">
+  <div className="hero-content text-center w-full">
+    <div className="w-full sm:w-[80%] lg:w-[90%]">
       <h1 className="text-5xl font-bold gradient-text">About me</h1>
       
       <div className='grid grid-cols-1 justify-items-center gap-4 py-6 md:grid-cols-3'>
       <div className="card w-full bg-base-300 card-sm shadow-sm">
             <div className="card-body">
             <h2 className="card-title">Backend</h2>
-                <div className="flex gap-2 flex-wrap">
+                <div className="flex gap-2 flex-wrap max-w-4xl">
                     <div className="badge badge-soft badge-info">Node.js</div>
                     <div className="badge badge-soft badge-info">Express.js</div>
                     <div className="badge badge-soft badge-info">Typescript</div>
@@ -32,7 +32,7 @@ function About() {
                 </div>
             </div>
         </div>
-        <div className="card w-full bg-base-300 card-sm shadow-sm">
+        <div className="card w-full max-w-2xl bg-base-300 card-sm shadow-sm">
             <div className="card-body">
             <h2 className="card-title">Frontend</h2>
                 <div className="flex gap-2 flex-wrap">
@@ -80,7 +80,7 @@ function About() {
             <div className="card-body">
             <h2 className="card-title">Formación</h2>
             <ul className=" list-inside text-left space-y-4">
-            <li className=' text-[#00bafe] bg-base-100 rounded-md p-2'>Ingeniería en Informatica - Universidad Nacional de Asuncion</li>
+            <li className=' text-[#00bafe] bg-base-100 rounded-md p-2 text-no'>Ingeniería en Informatica - Universidad Nacional de Asuncion</li>
             <li className=' text-[#00bafe] bg-base-100 rounded-md p-2'>Certificación Fullstack - Plataforma Udemy</li>
             </ul>
  
