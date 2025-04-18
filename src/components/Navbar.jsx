@@ -1,6 +1,11 @@
-import React from 'react'
+import { Link } from 'react-scroll';
+
+
 
 function Navbar() {
+  
+
+
   return (
     <div className="navbar shadow-sm ">
         <div className="navbar-start">
@@ -11,20 +16,21 @@ function Navbar() {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-300 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Projects</a></li>
-        <li><a>Contact</a></li>
+        <Link to='home' smooth={true} duration={500} ><li><a>Home</a></li></Link>
+        <Link to="about" smooth={true} duration={500}><li><a>About</a></li></Link>
+        <Link to="projects" smooth={true} duration={500}><li><a>Projects</a></li></Link>
+        <Link to="contact" smooth={true} duration={500}><li><a>Contact</a></li></Link>
+        
       </ul>
             </div>
             <a className="btn btn-ghost text-xl">Building The Web</a>
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Contact</a></li>
+                <Link to='home' smooth={true} duration={500} ><li><a>Home</a></li></Link>
+                <Link to="about" smooth={true} duration={500}><li><a>About</a></li></Link>
+                <Link to="projects" smooth={true} duration={500}><li><a>Projects</a></li></Link>
+                <Link to="contact" smooth={true} duration={500}><li><a>Contact</a></li></Link>
             </ul>
         </div>
         <div className="navbar-end">
