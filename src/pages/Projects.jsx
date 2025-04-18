@@ -1,9 +1,9 @@
 import React from 'react'
 function Projects() {
   return (
-<div className="hero  min-h-screen">
-  <div className="hero-content text-center">
-    <div className="max-w-6xl">
+<div id="projects" className="hero  min-h-scree">
+  <div className="hero-content text-center w-full" >
+    <div className="w-full sm:w-[80%] lg:w-[90%]">
       <h1 className="text-5xl font-bold gradient-text">Featured Projects</h1>
       
       <div className='grid grid-cols-1 gap-4 py-6 md:grid-cols-3'>
