@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-scroll'
 
 function Hero() {
   return (
@@ -10,8 +11,8 @@ function Hero() {
       Desarrollador Full-Stack apasionado por la creación de experiencias digitales fluidas, escalables y seguras.
       </p>
       <div className="space-x-4">
-        <button className="btn btn-info">View Projects</button>
-        <button className="btn btn-outline btn-info">Contact Me</button>
+        <Link to="projects" smooth={true} duration={500} className="btn btn-info">View Projects</Link>
+        <Link to="contact" smooth={true} duration={500} className="btn btn-outline btn-info">Contact Me</Link>
       </div>
 
     </div>
