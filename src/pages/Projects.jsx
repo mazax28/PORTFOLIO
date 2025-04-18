@@ -1,10 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 function Projects() {
+    const { t } = useTranslation("global");
   return (
 <div id="projects" className="hero  min-h-scree">
   <div className="hero-content text-center w-full" >
     <div className="w-full sm:w-[80%] lg:w-[90%]">
-      <h1 className="text-5xl font-bold gradient-text">Featured Projects</h1>
+      <h1 className="text-5xl font-bold gradient-text">{t("projects.title")}</h1>
       
       <div className='grid grid-cols-1 gap-4 py-6 md:grid-cols-3'>
       <div className="card w-full bg-base-300 card-sm shadow-sm">

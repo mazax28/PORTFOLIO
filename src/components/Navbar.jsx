@@ -1,9 +1,10 @@
 import { Link } from 'react-scroll';
+import {useTranslation} from 'react-i18next';
 
 
 
 function Navbar() {
-  
+  const { t } = useTranslation("global");
 
 
   return (
@@ -16,10 +17,10 @@ function Navbar() {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-300 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <Link to='home' smooth={true} duration={500} ><li><a>Home</a></li></Link>
-        <Link to="about" smooth={true} duration={500}><li><a>About</a></li></Link>
-        <Link to="projects" smooth={true} duration={500}><li><a>Projects</a></li></Link>
-        <Link to="contact" smooth={true} duration={500}><li><a>Contact</a></li></Link>
+        <Link to='home' smooth={true} duration={500} ><li><a>{t("navbar.home")}</a></li></Link>
+        <Link to="about" smooth={true} duration={500}><li><a>{t("navbar.about")}</a></li></Link>
+        <Link to="projects" smooth={true} duration={500}><li><a>{t("navbar.projects")}</a></li></Link>
+        <Link to="contact" smooth={true} duration={500}><li><a>{t("navbar.contact")}</a></li></Link>
         
       </ul>
             </div>
@@ -27,14 +28,14 @@ function Navbar() {
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-                <Link to='home' smooth={true} duration={500} ><li><a>Home</a></li></Link>
-                <Link to="about" smooth={true} duration={500}><li><a>About</a></li></Link>
-                <Link to="projects" smooth={true} duration={500}><li><a>Projects</a></li></Link>
-                <Link to="contact" smooth={true} duration={500}><li><a>Contact</a></li></Link>
+                <Link to='home' smooth={true} duration={500} ><li><a>{t("navbar.home")}</a></li></Link>
+                <Link to="about" smooth={true} duration={500}><li><a>{t("navbar.about")}</a></li></Link>
+                <Link to="projects" smooth={true} duration={500}><li><a>{t("navbar.projects")}</a></li></Link>
+                <Link to="contact" smooth={true} duration={500}><li><a>{t("navbar.contact")}</a></li></Link>
             </ul>
         </div>
         <div className="navbar-end">
-            <a className="btn btn-info">Download CV</a>
+            <a className="btn btn-info">{t("navbar.download")}</a>
         </div>
     </div>
   )

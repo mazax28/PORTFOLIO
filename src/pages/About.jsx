@@ -1,15 +1,17 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 function About() {
+  const { t } = useTranslation("global");
   return (
 <div id="about" className="hero  min-h-screen">
   <div className="hero-content text-center w-full">
     <div className="w-full sm:w-[80%] lg:w-[90%]">
-      <h1 className="text-5xl font-bold gradient-text">About me</h1>
+      <h1 className="text-5xl font-bold gradient-text">{t("about.title")}</h1>
       
       <div className='grid grid-cols-1 justify-items-center gap-4 py-6 md:grid-cols-3'>
       <div className="card w-full bg-base-300 card-sm shadow-sm">
             <div className="card-body">
-            <h2 className="card-title">Backend</h2>
+            <h2 className="card-title">{t("about.backend")}</h2>
                 <div className="flex gap-2 flex-wrap max-w-4xl">
                     <div className="badge badge-soft badge-info">Node.js</div>
                     <div className="badge badge-soft badge-info">Express.js</div>
@@ -34,7 +36,7 @@ function About() {
         </div>
         <div className="card w-full max-w-2xl bg-base-300 card-sm shadow-sm">
             <div className="card-body">
-            <h2 className="card-title">Frontend</h2>
+            <h2 className="card-title">{t("about.frontend")}</h2>
                 <div className="flex gap-2 flex-wrap">
                     <div className="badge badge-soft badge-info">HTML</div>
                     <div className="badge badge-soft badge-info">CSS</div>
@@ -56,7 +58,7 @@ function About() {
         </div>
         <div className="card w-full bg-base-300 card-sm shadow-sm">
             <div className="card-body">
-            <h2 className="card-title">Herramientas</h2>
+            <h2 className="card-title">{t("about.tools")}</h2>
                 <div className="flex gap-2 flex-wrap">
                     <div className="badge badge-soft badge-info">VScode</div>
                     <div className="badge badge-soft badge-info">Git</div>
@@ -78,7 +80,7 @@ function About() {
       <div className='grid grid-cols-1 py-4 gap-4 md:grid-cols-3'>
       <div className="card w-full bg-base-300 card-sm shadow-sm">
             <div className="card-body">
-            <h2 className="card-title">Formación</h2>
+            <h2 className="card-title">{t("about.education")}</h2>
             <ul className=" list-inside text-left space-y-4">
             <li className=' text-[#00bafe] bg-base-100 rounded-md p-2 text-no'>Ingeniería en Informatica - Universidad Nacional de Asuncion</li>
             <li className=' text-[#00bafe] bg-base-100 rounded-md p-2'>Certificación Fullstack - Plataforma Udemy</li>
@@ -89,12 +91,12 @@ function About() {
         </div>
         <div className="card w-full bg-base-300 card-sm shadow-sm">
             <div className="card-body">
-            <h2 className="card-title">Habilidades Blandas</h2>
+            <h2 className="card-title">{t("about.softSkills")}</h2>
             <div className="flex gap-2 flex-wrap">
-                <div className="badge badge-soft badge-info">Trabajo en equipo</div>
-                <div className="badge badge-soft badge-info">Comunicación</div>
-                <div className="badge badge-soft badge-info">Adaptabilidad</div>
-                <div className="badge badge-soft badge-info">Gestión del tiempo</div>
+                <div className="badge badge-soft badge-info">{t("about.teamwork")}</div>
+                <div className="badge badge-soft badge-info">{t("about.communication")}</div>
+                <div className="badge badge-soft badge-info">{t("about.adaptability")}</div>
+                <div className="badge badge-soft badge-info">{t("about.timeManagement")}</div>
             </div>
 
             </div>
@@ -102,10 +104,10 @@ function About() {
 
         <div className="card w-full bg-base-300 card-sm shadow-sm">
             <div className="card-body">
-            <h2 className="card-title">Idiomas</h2>
+            <h2 className="card-title">{t("about.languages")}</h2>
             <div className="flex gap-2 flex-wrap">
-            <div className="badge badge-soft badge-info">Español (Nativo)</div>
-            <div className="badge badge-soft badge-info">Inglés (Avanzado)</div>
+            <div className="badge badge-soft badge-info">{t("about.spanishNative")}</div>
+            <div className="badge badge-soft badge-info">{t("about.englishIntermediate")}</div>
             </div>
 
             </div>
