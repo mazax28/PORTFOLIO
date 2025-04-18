@@ -1,0 +1,58 @@
+{
+    "navbar":{
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "download": "Download CV"
+
+    },
+    "hero":{
+        "title": "Hey there! I'm Marcos Zarate ",
+        "description": "A Full-Stack Developer passionate about building seamless, scalable, and secure digital experiences",
+        "v_project": "View Projects",
+        "v_contact": "Contact Me"
+    },
+    "about":{
+        "title": "About Me",
+        "frontend": "Frontend",
+        "tools": "Tools",
+        "education": "Education",
+        "softSkills": "Soft Skills",
+        "languages": "Languages",
+        "teamwork": "Teamwork",
+        "communication": "Communication",
+        "adaptability": "Adaptability",
+        "timeManagement": "Time Management",
+        "spanishNative": "Spanish (Native)",
+        "englishIntermediate": "English (Intermediate)"
+    },
+    "projects":{
+        "title": "Featured Projects"
+    },
+    "contact":{
+        "title": "Let's Work Together",
+        "i_name": "Name",
+        "i_lastname": "Lastname",
+        "i_email": "Email Adress",
+        "i_phone": "Phone Number",
+        "i_message": "Type your message here",
+        "i_send": "Send Message",
+        "phone": "Phone",
+        "email": "Email",
+        "location": "Location"
+    },
+    "error":{
+        "error_required": "This field is required",
+        "error_name_min": "Name must be at least 2 characters",
+        "error_name_max": "Name must be at most 20 characters",
+        "error_lastname_min": "Lastname must be at least 2 characters",
+        "error_lastname_max": "Lastname must be at most 20 characters",
+        "error_email_invalid": "Invalid email address",
+        "error_phone_invalid": "Invalid phone number",
+        "error_phone_min": "Phone number must be at least 10 characters",
+        "error_phone_max": "Phone number must be at most 15 characters",
+        "error_message_min": "Message must be at least 5 characters"
+      
+    }
+}

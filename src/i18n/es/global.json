@@ -1,0 +1,58 @@
+{
+    "navbar":{
+        "home": "Inicio",
+        "about": "Acerca de",
+        "projects": "Proyectos",
+        "contact": "Contacto",
+        "download": "Descargar CV"
+    },
+    "hero":{
+        "title": "¡Hola! Soy Marcos Zarate",
+        "description": "Desarrollador Full-Stack apasionado por la creación de experiencias digitales fluidas, escalables y seguras.",
+        "v_project": "Ver Proyectos",
+        "v_contact": "Contacta conmigo"
+    },
+    "about":{
+        "title": "Sobre mí",
+        "backend": "Backend",
+        "frontend": "Frontend",
+        "tools": "Herramientas",
+        "education": "Formación",
+        "softSkills": "Habilidades Blandas",
+        "languages": "Idiomas",
+        "teamwork": "Trabajo en equipo",
+        "communication": "Comunicación",
+        "adaptability": "Adaptabilidad",
+        "timeManagement": "Gestión del tiempo",
+        "spanishNative": "Español (Nativo)",
+        "englishIntermediate": "Inglés (Intermedio)"
+
+    },
+    "projects":{
+        "title": "Proyectos Destacados"
+    },
+    "contact":{
+        "title": "Trabajemos juntos!",
+        "i_name": "Nombre",
+        "i_lastname": "Apellido",
+        "i_email": "Dirección de correo electrónico",
+        "i_phone": "Número de teléfono",
+        "i_message": "Escribe tu mensaje aquí",
+        "i_send": "Enviar mensaje",
+        "phone": "Teléfono",
+        "email": "Email",
+        "location": "Localización"
+    },
+    "error":{
+        "error_required": "Este campo es obligatorio",
+        "error_name_min": "El nombre debe tener al menos 2 caracteres",
+        "error_name_max": "El nombre debe tener como máximo 20 caracteres",
+        "error_lastname_min": "El apellido debe tener al menos 2 caracteres",
+        "error_lastname_max": "El apellido debe tener como máximo 20 caracteres",
+        "error_email_invalid": "Correo electrónico no válido",
+        "error_phone_invalid": "Número de teléfono no válido",
+        "error_phone_min": "El número debe tener al menos 10 caracteres",
+        "error_phone_max": "El número debe tener como máximo 15 caracteres",
+        "error_message_min": "El mensaje debe tener al menos 5 caracteres"
+    }
+}
