@@ -1,22 +1,21 @@
-import React from 'react'
+import React from 'react';
 
 function Footer() {
   return (
-<footer className="footer bg-base-300 mt-16 sm:footer-horizontal  text-neutral-content items-center p-4">
-  <aside className="grid-flow-col items-center">
-    
-    <p className=' text-[#00bafe]'> Copyright © {new Date().getFullYear()} - All right reserved</p>
-  </aside>
-  <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-  <a className="btn btn-outline btn-info"><i class="ri-linkedin-fill"></i></a>
-
-  <a className="btn btn-outline btn-info"><i class="ri-github-fill"></i></a>
-
-  <a className="btn btn-outline btn-info"><i class="ri-youtube-fill"></i></a>
-
-  </nav>
-</footer>
-  )
+    <footer className="footer footer-center  bg-white/5 backdrop-blur-md shadow-md text-white mt-16 p-6 rounded-lg">
+      <nav className="flex gap-4 justify-center">
+        <a className="btn btn-circle btn-info btn-soft text-xl">
+          <i className="ri-linkedin-fill"></i>
+        </a>
+        <a className="btn btn-circle btn-info btn-soft text-xl">
+          <i className="ri-github-fill"></i>
+        </a>
+        <a className="btn btn-circle btn-info btn-soft text-xl">
+          <i className="ri-youtube-fill"></i>
+        </a>
+      </nav>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
