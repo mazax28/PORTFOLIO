@@ -25,10 +25,10 @@ function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1.2, duration: 0.8 }}
           >
-            <Link to="projects" smooth={true} duration={500} className="btn btn-info">
+            <Link to="projects" smooth={true} duration={500} offset={-64} className="btn btn-info">
               {t("hero.v_project")}
             </Link>
-            <Link to="contact" smooth={true} duration={500} className="btn btn-outline btn-info">
+            <Link to="contact" smooth={true} duration={500} offset={-64} className="btn btn-outline btn-info">
               {t("hero.v_contact")}
             </Link>
           </motion.div>
