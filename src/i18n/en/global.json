@@ -52,7 +52,10 @@
         "error_phone_invalid": "Invalid phone number",
         "error_phone_min": "Phone number must be at least 10 characters",
         "error_phone_max": "Phone number must be at most 15 characters",
-        "error_message_min": "Message must be at least 5 characters"
-      
+        "error_message_min": "Message must be at least 5 characters",
+        "error_send_message_fail": "Failed to send message"
+    },
+    "success":{
+        "success_send_message": "Message sent successfully"
     }
 }

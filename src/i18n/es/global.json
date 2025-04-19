@@ -53,6 +53,10 @@
         "error_phone_invalid": "Número de teléfono no válido",
         "error_phone_min": "El número debe tener al menos 10 caracteres",
         "error_phone_max": "El número debe tener como máximo 15 caracteres",
-        "error_message_min": "El mensaje debe tener al menos 5 caracteres"
+        "error_message_min": "El mensaje debe tener al menos 5 caracteres",
+        "error_send_message_fail": "Error al enviar el mensaje"
+    },
+    "success":{
+        "success_send_message": "Mensaje enviado con éxito"
     }
 }
