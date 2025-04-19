@@ -33,7 +33,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-info">{t("navbar.download")}</a>
+        <a href='../downloads/MARCOS ZÁRATE DESARROLLADOR WEB.pdf' download="CV-Marcos-Zarate-Desarrollador-Web.pdf" className="btn btn-info">{t("navbar.download")}</a>
       </div>
     </div>
   )
