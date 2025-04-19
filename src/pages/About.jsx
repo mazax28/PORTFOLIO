@@ -1,126 +1,155 @@
-import React from 'react'
-import { useTranslation } from 'react-i18next'
+import React, { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
+import { motion, useInView } from 'framer-motion';
+
 function About() {
   const { t } = useTranslation("global");
+  const ref = useRef(null);
+  const isInView = useInView(ref); // Sin `{ once: true }` para que la animación se repita
+
+  const fadeUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: (custom = 0) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, delay: custom },
+    }),
+  };
+
   return (
-<div id="about" className="hero  min-h-screen">
-  <div className="hero-content text-center w-full">
-    <div className="w-full sm:w-[80%] lg:w-[90%]">
-      <h1 className="text-5xl font-bold gradient-text">{t("about.title")}</h1>
-      
-      <div className='grid grid-cols-1 justify-items-center gap-4 py-6 md:grid-cols-3'>
-      <div className="card w-full bg-base-300 card-sm shadow-sm">
-            <div className="card-body">
-            <h2 className="card-title">{t("about.backend")}</h2>
+    <div id="about" className="hero min-h-screen" ref={ref}>
+      <div className="hero-content text-center w-full">
+        <motion.div
+          className="w-full sm:w-[80%] lg:w-[90%]"
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+          variants={fadeUp}
+        >
+          <motion.h1
+            className="text-5xl font-bold gradient-text"
+            custom={0}
+            variants={fadeUp}
+          >
+            {t("about.title")}
+          </motion.h1>
+
+          {/* Primera sección de 3 cards */}
+          <div className='grid grid-cols-1 justify-items-center gap-4 py-6 md:grid-cols-3'>
+            {/* Backend */}
+            <motion.div
+              className="card w-full bg-white/5 backdrop-blur-md shadow-md card-sm"
+              custom={0.2}
+              variants={fadeUp}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <div className="card-body">
+                <h2 className="card-title">{t("about.backend")}</h2>
                 <div className="flex gap-2 flex-wrap max-w-4xl">
-                    <div className="badge badge-soft badge-info">Node.js</div>
-                    <div className="badge badge-soft badge-info">Express.js</div>
-                    <div className="badge badge-soft badge-info">Typescript</div>
-                    <div className="badge badge-soft badge-info">Python</div>
-                    <div className="badge badge-soft badge-info">Django</div>
-                    <div className="badge badge-soft badge-info">Flask</div>
-                    <div className="badge badge-soft badge-info">MongoDB</div>
-                    <div className="badge badge-soft badge-info">PostgreSQL</div>
-                    <div className="badge badge-soft badge-info">MySQL</div>
-                    <div className="badge badge-soft badge-info">Firebase</div>
-                    <div className="badge badge-soft badge-info">Supabase</div>
-                    <div className="badge badge-soft badge-info">Prisma</div>
-                    <div className="badge badge-soft badge-info">Docker</div>
-                    <div className="badge badge-soft badge-info">Postman</div>
-                    <div className="badge badge-soft badge-info">Redis</div>
-                    <div className="badge badge-soft badge-info">Jest</div>
-    
-
+                  {/* Aquí tus badges originales */}
+                  {["Node.js", "Express.js", "Typescript", "Python", "Django", "Flask", "MongoDB", "PostgreSQL", "MySQL", "Firebase", "Supabase", "Prisma", "Docker", "Postman", "Redis", "Jest"].map((tech) => (
+                    <div key={tech} className="badge badge-soft badge-info">{tech}</div>
+                  ))}
                 </div>
-            </div>
-        </div>
-        <div className="card w-full max-w-2xl bg-base-300 card-sm shadow-sm">
-            <div className="card-body">
-            <h2 className="card-title">{t("about.frontend")}</h2>
+              </div>
+            </motion.div>
+
+            {/* Frontend */}
+            <motion.div
+              className="card w-full max-w-2xl bg-white/5 backdrop-blur-md shadow-md card-sm"
+              custom={0.4}
+              variants={fadeUp}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <div className="card-body">
+                <h2 className="card-title">{t("about.frontend")}</h2>
                 <div className="flex gap-2 flex-wrap">
-                    <div className="badge badge-soft badge-info">HTML</div>
-                    <div className="badge badge-soft badge-info">CSS</div>
-                    <div className="badge badge-soft badge-info">React</div>
-                    <div className="badge badge-soft badge-info">Next.js</div>
-                    <div className="badge badge-soft badge-info">Tailwind</div>
-                    <div className="badge badge-soft badge-info">TypeScript</div>
-                    <div className="badge badge-soft badge-info">JavaScript</div>
-                    <div className="badge badge-soft badge-info">Tanstack</div>
-                    <div className="badge badge-soft badge-info">Zustand</div>
-                    <div className="badge badge-soft badge-info">Sass</div>
-                    <div className="badge badge-soft badge-info">Material UI</div>
-                    <div className="badge badge-soft badge-info">Daisy UI</div>
-                    <div className="badge badge-soft badge-info">Shadcn</div>
+                  {["HTML", "CSS", "React", "Next.js", "Tailwind", "TypeScript", "JavaScript", "Tanstack", "Zustand", "Sass", "Material UI", "Daisy UI", "Shadcn"].map((tech) => (
+                    <div key={tech} className="badge badge-soft badge-info">{tech}</div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
 
-                 </div> 
-                
-            </div>
-        </div>
-        <div className="card w-full bg-base-300 card-sm shadow-sm">
-            <div className="card-body">
-            <h2 className="card-title">{t("about.tools")}</h2>
+            {/* Tools */}
+            <motion.div
+              className="card w-full bg-white/5 backdrop-blur-md shadow-md card-sm"
+              custom={0.6}
+              variants={fadeUp}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <div className="card-body">
+                <h2 className="card-title">{t("about.tools")}</h2>
                 <div className="flex gap-2 flex-wrap">
-                    <div className="badge badge-soft badge-info">VScode</div>
-                    <div className="badge badge-soft badge-info">Git</div>
-                    <div className="badge badge-soft badge-info">Github</div>
-                    <div className="badge badge-soft badge-info">OpenAPI</div>
-                    <div className="badge badge-soft badge-info">Docker</div>
-                    <div className="badge badge-soft badge-info">Figma</div>
-                    <div className="badge badge-soft badge-info">Postman</div>
-                    <div className="badge badge-soft badge-info">Jira</div>
-                    <div className="badge badge-soft badge-info">Slack</div>
+                  {["VScode", "Git", "Github", "OpenAPI", "Docker", "Figma", "Postman", "Jira", "Slack"].map((tool) => (
+                    <div key={tool} className="badge badge-soft badge-info">{tool}</div>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </div>
 
+          {/* Segunda sección de 3 cards */}
+          <div className='grid grid-cols-1 py-4 gap-4 md:grid-cols-3'>
+            {/* Educación */}
+            <motion.div
+              className="card w-full bg-white/5 backdrop-blur-md shadow-md card-sm"
+              custom={0.8}
+              variants={fadeUp}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <div className="card-body">
+                <h2 className="card-title">{t("about.education")}</h2>
+                <ul className="list-inside text-left space-y-4">
+                  <li className='text-[#00bafe] bg-base-100 rounded-md p-2'>Ingeniería en Informática - Universidad Nacional de Asunción</li>
+                  <li className='text-[#00bafe] bg-base-100 rounded-md p-2'>Certificación Fullstack - Plataforma Udemy</li>
+                </ul>
+              </div>
+            </motion.div>
 
-                 </div> 
-                
-            </div>
-        </div>
-        
-      </div>
-      <div className='grid grid-cols-1 py-4 gap-4 md:grid-cols-3'>
-      <div className="card w-full bg-base-300 card-sm shadow-sm">
-            <div className="card-body">
-            <h2 className="card-title">{t("about.education")}</h2>
-            <ul className=" list-inside text-left space-y-4">
-            <li className=' text-[#00bafe] bg-base-100 rounded-md p-2 text-no'>Ingeniería en Informatica - Universidad Nacional de Asuncion</li>
-            <li className=' text-[#00bafe] bg-base-100 rounded-md p-2'>Certificación Fullstack - Plataforma Udemy</li>
-            </ul>
- 
-                
-            </div>
-        </div>
-        <div className="card w-full bg-base-300 card-sm shadow-sm">
-            <div className="card-body">
-            <h2 className="card-title">{t("about.softSkills")}</h2>
-            <div className="flex gap-2 flex-wrap">
-                <div className="badge badge-soft badge-info">{t("about.teamwork")}</div>
-                <div className="badge badge-soft badge-info">{t("about.communication")}</div>
-                <div className="badge badge-soft badge-info">{t("about.adaptability")}</div>
-                <div className="badge badge-soft badge-info">{t("about.timeManagement")}</div>
-            </div>
+            {/* Soft skills */}
+            <motion.div
+              className="card w-full bg-white/5 backdrop-blur-md shadow-md card-sm"
+              custom={1}
+              variants={fadeUp}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <div className="card-body">
+                <h2 className="card-title">{t("about.softSkills")}</h2>
+                <div className="flex gap-2 flex-wrap">
+                  <div className="badge badge-soft badge-info">{t("about.teamwork")}</div>
+                  <div className="badge badge-soft badge-info">{t("about.communication")}</div>
+                  <div className="badge badge-soft badge-info">{t("about.adaptability")}</div>
+                  <div className="badge badge-soft badge-info">{t("about.timeManagement")}</div>
+                </div>
+              </div>
+            </motion.div>
 
-            </div>
-        </div>
-
-        <div className="card w-full bg-base-300 card-sm shadow-sm">
-            <div className="card-body">
-            <h2 className="card-title">{t("about.languages")}</h2>
-            <div className="flex gap-2 flex-wrap">
-            <div className="badge badge-soft badge-info">{t("about.spanishNative")}</div>
-            <div className="badge badge-soft badge-info">{t("about.englishIntermediate")}</div>
-            </div>
-
-            </div>
-        </div>
-
-        
-
+            {/* Idiomas */}
+            <motion.div
+              className="card w-full bg-white/5 backdrop-blur-md shadow-md card-sm"
+              custom={1.2}
+              variants={fadeUp}
+              initial="hidden"
+              animate={isInView ? "visible" : "hidden"}
+            >
+              <div className="card-body">
+                <h2 className="card-title">{t("about.languages")}</h2>
+                <div className="flex gap-2 flex-wrap">
+                  <div className="badge badge-soft badge-info">{t("about.spanishNative")}</div>
+                  <div className="badge badge-soft badge-info">{t("about.englishIntermediate")}</div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
       </div>
     </div>
-    
-  </div>
-</div>
-  )
+  );
 }
 
-export default About
+export default About;
