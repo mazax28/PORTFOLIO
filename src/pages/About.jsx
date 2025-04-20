@@ -66,7 +66,7 @@ function About() {
                 <h2 className="card-title">{t("about.frontend")}</h2>
                 <div className="flex gap-2 flex-wrap">
                   {["HTML", "CSS", "React", "Next.js", "Tailwind", "TypeScript", "JavaScript", "Tanstack", "Zustand", "Sass", "Material UI", "Daisy UI", "Shadcn"].map((tech) => (
-                    <div key={tech} className="badge badge-soft badge-info">{tech}</div>
+                    <div key={tech} className="badge badge-soft badge-info bg-[#0a0a0a]/60 text-[#00bafe]">{tech}</div>
                   ))}
                 </div>
               </div>
