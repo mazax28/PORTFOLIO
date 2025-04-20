@@ -10,7 +10,7 @@ function Footer() {
         <a href='https://github.com/mazax28' target='blank' className="btn btn-circle btn-info btn-soft text-xl">
           <i className="ri-github-fill"></i>
         </a>
-        <a className="btn btn-circle btn-info btn-soft text-xl">
+        <a className="btn btn-circle btn-soft btn-info text-xl">
           <i className="ri-youtube-fill"></i>
         </a>
       </nav>
