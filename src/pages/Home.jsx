@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 function Home() {
   return (
-    <div id="home">
+    <div className='mt-4 mb-4' id="home">
         <Navbar />
         <Hero />
     </div>
