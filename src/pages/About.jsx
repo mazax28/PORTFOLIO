@@ -48,7 +48,7 @@ function About() {
                 <div className="flex gap-2 flex-wrap max-w-4xl">
                   {/* Aquí tus badges originales */}
                   {["Node.js", "Express.js", "Typescript", "Python", "Django", "Flask", "MongoDB", "PostgreSQL", "MySQL", "Firebase", "Supabase", "Prisma", "Docker", "Postman", "Redis", "Jest"].map((tech) => (
-                    <div key={tech} className="badge badge-info bg-[#0a0a0a]/60">{tech}</div>
+                    <div key={tech} className="badge badge-info bg-[#0a0a0a]/60 text-[#00bafe]">{tech}</div>
                   ))}
                 </div>
               </div>
@@ -84,7 +84,7 @@ function About() {
                 <h2 className="card-title">{t("about.tools")}</h2>
                 <div className="flex gap-2 flex-wrap">
                   {["VScode", "Git", "Github", "OpenAPI", "Docker", "Figma", "Postman", "Jira", "Slack"].map((tool) => (
-                    <div key={tool} className="badge  badge-info  bg-[#0a0a0a]/60">{tool}</div>
+                    <div key={tool} className="badge  badge-info  bg-[#0a0a0a]/60  text-[#00bafe]" >{tool}</div>
                   ))}
                 </div>
               </div>
@@ -104,8 +104,8 @@ function About() {
               <div className="card-body">
                 <h2 className="card-title">{t("about.education")}</h2>
                 <ul className="list-inside text-left space-y-4">
-                  <li className='text-[#00bafe] bg-base-100 rounded-md p-2'>Ingeniería en Informática - Universidad Nacional de Asunción</li>
-                  <li className='text-[#00bafe] bg-base-100 rounded-md p-2'>Certificación Fullstack - Plataforma Udemy</li>
+                  <li className=' bg-[#0a0a0a]/60  text-[#00bafe]  rounded-md p-2'>Ingeniería en Informática - Universidad Nacional de Asunción</li>
+                  <li className=' bg-[#0a0a0a]/60  text-[#00bafe] rounded-md p-2'>Certificación Fullstack - Plataforma Udemy</li>
                 </ul>
               </div>
             </motion.div>
@@ -121,10 +121,10 @@ function About() {
               <div className="card-body">
                 <h2 className="card-title">{t("about.softSkills")}</h2>
                 <div className="flex gap-2 flex-wrap">
-                  <div className="badge  bg-[#0a0a0a]/60 badge-info">{t("about.teamwork")}</div>
-                  <div className="badge  bg-[#0a0a0a]/60 badge-info">{t("about.communication")}</div>
-                  <div className="badge  bg-[#0a0a0a]/60 badge-info">{t("about.adaptability")}</div>
-                  <div className="badge  bg-[#0a0a0a]/60 badge-info">{t("about.timeManagement")}</div>
+                  <div className="badge badge-info bg-[#0a0a0a]/60 text-[#00bafe]">{t("about.teamwork")}</div>
+                  <div className="badge badge-info bg-[#0a0a0a]/60 text-[#00bafe]">{t("about.communication")}</div>
+                  <div className="badge badge-info bg-[#0a0a0a]/60 text-[#00bafe]">{t("about.adaptability")}</div>
+                  <div className="badge badge-info bg-[#0a0a0a]/60 text-[#00bafe]">{t("about.timeManagement")}</div>
                 </div>
               </div>
             </motion.div>
@@ -140,8 +140,8 @@ function About() {
               <div className="card-body">
                 <h2 className="card-title">{t("about.languages")}</h2>
                 <div className="flex gap-2 flex-wrap">
-                  <div className="badge badge-soft badge-info">{t("about.spanishNative")}</div>
-                  <div className="badge badge-soft badge-info">{t("about.englishIntermediate")}</div>
+                  <div className="badge badge-info  bg-[#0a0a0a]/60 text-[#00bafe]">{t("about.spanishNative")}</div>
+                  <div className="badge badge-info  bg-[#0a0a0a]/60 text-[#00bafe]">{t("about.englishIntermediate")}</div>
                 </div>
               </div>
             </motion.div>
