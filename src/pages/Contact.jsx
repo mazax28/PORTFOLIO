@@ -115,7 +115,7 @@ function Contact() {
                     <input
                       type="text"
                       placeholder={t(`contact.i_${field}`)}
-                      className="input input-info w-full bg-white/10 backdrop-blur-sm border-none"
+                      className="input input-info  w-full bg-white/10 backdrop-blur-sm border-none focus:border-[#00bafe]"
                       {...register(field, {
                         required: t("error.error_required"),
                         ...(field === "email" && {
@@ -165,7 +165,7 @@ function Contact() {
                 >
                   <textarea
                     placeholder={t("contact.i_message")}
-                    className="textarea textarea-info w-full bg-white/10 backdrop-blur-sm border-none"
+                    className="textarea textarea-info w-full bg-white/10 backdrop-blur-sm border-none focus:border-[#00bafe]"
                     {...register("message", {
                       required: t("error.error_required"),
                       minLength: {
