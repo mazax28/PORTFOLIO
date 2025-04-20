@@ -58,6 +58,8 @@ function Navbar() {
 </select>
         <a href="/downloads/MARCOS ZÁRATE DESARROLLADOR WEB.pdf"
           target="_blank" 
+
+          rel="noopener noreferrer"
           className="btn btn-info">{t("navbar.download")}</a>
       </div>
     </div>
