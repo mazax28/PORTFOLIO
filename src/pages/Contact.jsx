@@ -181,7 +181,7 @@ function Contact() {
 
                 <motion.button
                   type="submit"
-                  className="btn btn-soft btn-info"
+                  className="btn  btn-info"
                   custom={1.4}
                   variants={fadeUp}
                   initial="hidden"

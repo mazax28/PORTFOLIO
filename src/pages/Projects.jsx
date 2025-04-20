@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion';
 function Projects() {
   const { t } = useTranslation("global");
   const ref = useRef(null);
-  const isInView = useInView(ref); // Without `{ once: true }` to allow animation repetition
+  const isInView = useInView(ref);
 
   const fadeUp = {
     hidden: { opacity: 0, y: 40 },
@@ -50,9 +50,9 @@ function Projects() {
                     API para productos, carritos y pagos, integrando Stripe para compras seguras.
                   </p>
                   <div className="flex gap-2 flex-wrap">
-                    <div className="badge badge-soft badge-info">Node.js</div>
-                    <div className="badge badge-soft badge-info">Express</div>
-                    <div className="badge badge-soft badge-info">MongoDB</div>
+                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">Node.js</div>
+                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">Express</div>
+                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">MongoDB</div>
                   </div>
                   <div className="card-actions justify-end py-2">
                     <button className="btn btn-circle btn-outline btn-info">
@@ -84,9 +84,9 @@ function Projects() {
                     API para productos, carritos y pagos, integrando Stripe para compras seguras.
                   </p>
                   <div className="flex gap-2 flex-wrap">
-                    <div className="badge badge-soft badge-info">Node.js</div>
-                    <div className="badge badge-soft badge-info">Express</div>
-                    <div className="badge badge-soft badge-info">MongoDB</div>
+                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">Node.js</div>
+                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">Express</div>
+                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">MongoDB</div>
                   </div>
                   <div className="card-actions justify-end py-2">
                     <button className="btn btn-circle btn-outline btn-info">
