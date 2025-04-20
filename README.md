@@ -17,7 +17,3 @@ Este es mi portafolio personal como desarrollador web. El objetivo es mostrar mi
 - **React Scroll** – Navegación suave entre secciones.
 - **EmailJS** – Envío de formularios de contacto por correo sin backend.
 
----
-
-## 📂 Estructura del proyecto
-
