@@ -56,7 +56,7 @@ function Navbar() {
   <option value="es">ES</option>
   <option value="en">EN</option>
 </select>
-        <a href='../downloads/MARCOS ZÁRATE DESARROLLADOR WEB.pdf' download="CV-Marcos-Zarate-Desarrollador-Web.pdf" className="btn btn-info">{t("navbar.download")}</a>
+        <a href='../../public/downloads/MARCOS ZÁRATE DESARROLLADOR WEB.pdf' download="CV-Marcos-Zarate-Desarrollador-Web.pdf" className="btn btn-info">{t("navbar.download")}</a>
       </div>
     </div>
   )
