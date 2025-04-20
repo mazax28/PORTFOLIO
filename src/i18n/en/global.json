@@ -16,6 +16,7 @@
     "about":{
         "title": "About Me",
         "frontend": "Frontend",
+        "backend": "Backend",
         "tools": "Tools",
         "education": "Education",
         "softSkills": "Soft Skills",
