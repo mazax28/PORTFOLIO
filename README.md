@@ -1,12 +1,23 @@
-# React + Vite
+# 🌐 Portafolio Personal - Marcos Zárate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio personal como desarrollador web. El objetivo es mostrar mis habilidades, proyectos, y proporcionar una forma de contacto profesional. Está construido con tecnologías modernas como React, TailwindCSS y Framer Motion.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- **React 19** – Librería principal para la construcción de interfaces.
+- **Vite** – Bundler ultrarrápido para desarrollo y producción.
+- **TailwindCSS 4** – Framework de estilos utilitario para diseño responsivo y moderno.
+- **DaisyUI** – Librería de componentes basada en TailwindCSS.
+- **Framer Motion** – Animaciones fluidas y profesionales para React.
+- **React Hook Form** – Manejo de formularios simple y performante.
+- **React Hot Toast** – Notificaciones modernas y elegantes.
+- **React i18next** – Internacionalización de la app (Español e Inglés).
+- **React Scroll** – Navegación suave entre secciones.
+- **EmailJS** – Envío de formularios de contacto por correo sin backend.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Estructura del proyecto
+
