@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 
 function Contact() {
   const { t } = useTranslation("global");
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState('');
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -20,9 +20,9 @@ function Contact() {
     }),
   };
 
-  const handleCopy = (text) => {
+  const handleCopy = (text,type) => {
     navigator.clipboard.writeText(text).then(() => {
-      setCopied(true);
+      setCopied(type);
       setTimeout(() => setCopied(false), 1500);
     });
   };
@@ -210,9 +210,9 @@ function Contact() {
                   <div>
                     <p className="text-gray-400">{t("contact.email")}</p>
                     <div className="flex gap-2 items-center">
-                      <p>marcoskrause2002@gmail.com</p>
+                      <p className={`${copied === 'email' ? 'text-[#00bafe]' : ''}  transition-colors duration-300`}>marcoskrause2002@gmail.com</p>
                       <i
-                        onClick={() => handleCopy("marcoskrause2002@gmail.com")}
+                        onClick={() => handleCopy("marcoskrause2002@gmail.com",'email')}
                         className="ri-file-copy-line cursor-pointer text-[#00bafe] transition-colors duration-200 hover:text-[#008ac4]"
                       ></i>
                     </div>
@@ -229,9 +229,9 @@ function Contact() {
                   <div>
                     <p className="text-gray-400">{t("contact.phone")}</p>
                     <div className="flex gap-2 items-center">
-                      <p>(+595) 986 746 209</p>
-                      <i
-                        onClick={() => handleCopy("(+595) 986 746 209")}
+                      <p className={`${copied === 'number' ? 'text-[#00bafe]' : ''}  transition-colors duration-300`} >(+595) 986 746 209</p>
+                      <i value='number'
+                        onClick={() => handleCopy("(+595) 986 746 209",'number' )}
                         className="ri-file-copy-line cursor-pointer text-[#00bafe] transition-colors duration-200 hover:text-[#008ac4]"
                       ></i>
                     </div>
