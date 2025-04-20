@@ -6,6 +6,8 @@ import { I18nextProvider } from 'react-i18next'
 import i18next from 'i18next'
 import global_es from './i18n/es/global.json'
 import global_en from './i18n/en/global.json'
+const storedLanguage = localStorage.getItem('language');
+const fallbackLang = storedLanguage ? JSON.parse(storedLanguage) : 'es';
 
 i18next.init({
   interpolation: {
@@ -19,7 +21,7 @@ i18next.init({
       global: global_es,
     },
   },
-  lng: 'es', // default language
+  lng: fallbackLang, // default language
 
 });
 
