@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, useInView } from 'framer-motion';
+import ProjectCard from '../components/ProjectCard';
 
 function Projects() {
   const { t } = useTranslation("global");
@@ -15,6 +16,51 @@ function Projects() {
       transition: { duration: 0.8, delay: custom },
     }),
   };
+
+  const projects = [
+    {
+      title: "Shopper",
+      description: "API para productos, carritos y pagos, integrando Stripe para compras seguras.",
+      technologies: ["Node.js", "Express", "MongoDB"],
+      liveLink: "https://shopper-ten-delta.vercel.app/",
+      repoLink: "https://github.com/mazax28/shopper",
+    },
+    {
+      title: "Portfolio Website",
+      description: "Sitio web personal para mostrar proyectos y habilidades.",
+      technologies: ["React", "TailwindCSS", "Framer Motion"],
+      liveLink: "https://portfolio-jova.vercel.app/",
+      repoLink: "https://github.com/mazax28/portfolio-jova",
+    },
+    {
+      title: "Blog Platform",
+      description: "Plataforma para publicar y gestionar blogs con autenticación.",
+      technologies: ["Next.js", "Firebase", "Chakra UI"],
+      liveLink: "https://blogplatform.example.com",
+      repoLink: "https://github.com/username/blog-platform",
+    },
+    {
+      title: "Task Manager",
+      description: "Aplicación para gestionar tareas con soporte para múltiples usuarios.",
+      technologies: ["Vue.js", "Vuetify", "Firebase"],
+      liveLink: "https://taskmanager.example.com",
+      repoLink: "https://github.com/username/task-manager",
+    },
+    {
+      title: "Weather App",
+      description: "Aplicación para consultar el clima en tiempo real usando APIs.",
+      technologies: ["React", "OpenWeather API", "Bootstrap"],
+      liveLink: "https://weatherapp.example.com",
+      repoLink: "https://github.com/username/weather-app",
+    },
+    {
+      title: "NFT Market",
+      description: "Aplicación de chat en tiempo real con soporte para múltiples salas.",
+      technologies: ["Socket.io", "Node.js", "React"],
+      liveLink: "https://nft-marketplace-three-gilt.vercel.app/",
+      repoLink: "https://github.com/mazax28/nft-marketplace",
+    },
+  ];
 
   return (
     <div id="projects" className="hero min-h-screen" ref={ref}>
@@ -33,71 +79,19 @@ function Projects() {
             {t("projects.title")}
           </motion.h1>
 
-          {/* First row of 3 project cards */}
-          <div className='grid grid-cols-1 gap-4 py-6 md:grid-cols-3'>
-            {[...Array(3)].map((_, index) => (
-              <motion.div
+          {/* Grid of project cards */}
+          <div className="grid grid-cols-1 gap-4 py-6 md:grid-cols-3">
+            {projects.map((project, index) => (
+              <ProjectCard
                 key={index}
-                className="card w-full bg-white/5 backdrop-blur-md shadow-md card-sm"
+                title={project.title}
+                description={project.description}
+                technologies={project.technologies}
                 custom={0.2 + index * 0.2}
-                variants={fadeUp}
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-              >
-                <div className="card-body">
-                  <h2 className="card-title">E-commerce Backend</h2>
-                  <p className='text-left'>
-                    API para productos, carritos y pagos, integrando Stripe para compras seguras.
-                  </p>
-                  <div className="flex gap-2 flex-wrap">
-                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">Node.js</div>
-                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">Express</div>
-                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">MongoDB</div>
-                  </div>
-                  <div className="card-actions justify-end py-2">
-                    <button className="btn btn-circle btn-outline btn-info">
-                      <i className="ri-arrow-right-s-line text-xl"></i>
-                    </button>
-                    <button className="btn btn-circle btn-outline btn-info">
-                      <i className="ri-github-fill text-xl"></i>
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Second row of 3 project cards */}
-          <div className='grid grid-cols-1 py-4 gap-4 md:grid-cols-3'>
-            {[...Array(3)].map((_, index) => (
-              <motion.div
-                key={index + 3}
-                className="card w-full bg-white/5 backdrop-blur-md shadow-md card-sm"
-                custom={0.8 + index * 0.2}
-                variants={fadeUp}
-                initial="hidden"
-                animate={isInView ? "visible" : "hidden"}
-              >
-                <div className="card-body">
-                  <h2 className="card-title">E-commerce Backend</h2>
-                  <p className='text-left'>
-                    API para productos, carritos y pagos, integrando Stripe para compras seguras.
-                  </p>
-                  <div className="flex gap-2 flex-wrap">
-                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">Node.js</div>
-                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">Express</div>
-                    <div className="badge border border-[#00bafe] bg-[#0a0a0a]/60 text-[#00bafe]">MongoDB</div>
-                  </div>
-                  <div className="card-actions justify-end py-2">
-                    <button className="btn btn-circle btn-outline btn-info">
-                      <i className="ri-arrow-right-s-line text-xl"></i>
-                    </button>
-                    <button className="btn btn-circle btn-outline btn-info">
-                      <i className="ri-github-fill text-xl"></i>
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
+                fadeUp={fadeUp}
+                liveLink={project.liveLink}
+                repoLink={project.repoLink}
+              />
             ))}
           </div>
         </motion.div>
