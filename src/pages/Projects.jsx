@@ -64,7 +64,7 @@ function Projects() {
       title: "Tomato",
       description: "Aplicación de chat en tiempo real con soporte para múltiples salas.",
       technologies: ["Socket.io", "Node.js", "React"],
-      liveLink: "https://vercel.com/mazax28s-projects/tomato",
+      liveLink: "https://tomato-wine-iota.vercel.app/",
       repoLink: "https://github.com/mazax28/tomato",
     },
     {
