@@ -104,6 +104,7 @@ function About() {
               <div className="card-body">
                 <h2 className="card-title">{t("about.education")}</h2>
                 <ul className="list-inside text-left space-y-4">
+                  <li className=' bg-[#0a0a0a]/60  text-[#00bafe] border border-[#00bafe]  rounded-md p-2'>Bachillerato Tecnico Industrial en Electronica - Instituto Paraguayo de Telecomunicaciones</li>
                   <li className=' bg-[#0a0a0a]/60  text-[#00bafe] border border-[#00bafe]  rounded-md p-2'>Ingeniería en Informática - Universidad Nacional de Asunción</li>
                   <li className=' bg-[#0a0a0a]/60  text-[#00bafe] rounded-md border border-[#00bafe] p-2'>Certificación Fullstack - Plataforma Udemy</li>
                 </ul>
