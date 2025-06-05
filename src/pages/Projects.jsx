@@ -50,7 +50,7 @@ function Projects() {
       title: "Crypto Place",
       description: "Aplicación para consultar el clima en tiempo real usando APIs.",
       technologies: ["React", "OpenWeather API", "Bootstrap"],
-      liveLink: "https://vercel.com/mazax28s-projects/crypto-tracking",
+      liveLink: "https://crypto-tracking-chi.vercel.app/",
       repoLink: "https://github.com/mazax28/crypto-tracking",
     },
     {
@@ -64,22 +64,22 @@ function Projects() {
       title: "Tomato",
       description: "Aplicación de chat en tiempo real con soporte para múltiples salas.",
       technologies: ["Socket.io", "Node.js", "React"],
-      liveLink: "https://nft-marketplace-three-gilt.vercel.app/",
-      repoLink: "https://github.com/mazax28/nft-marketplace",
+      liveLink: "https://vercel.com/mazax28s-projects/tomato",
+      repoLink: "https://github.com/mazax28/tomato",
     },
     {
       title: "RoyalX",
       description: "Aplicación de chat en tiempo real con soporte para múltiples salas.",
       technologies: ["Socket.io", "Node.js", "React"],
-      liveLink: "https://nft-marketplace-three-gilt.vercel.app/",
-      repoLink: "https://github.com/mazax28/nft-marketplace",
+      liveLink: "https://royal-x-phi.vercel.app/",
+      repoLink: "https://github.com/mazax28/RoyalX",
     },
     {
       title: "Edusity",
       description: "Aplicación de chat en tiempo real con soporte para múltiples salas.",
       technologies: ["Socket.io", "Node.js", "React"],
-      liveLink: "https://nft-marketplace-three-gilt.vercel.app/",
-      repoLink: "https://github.com/mazax28/nft-marketplace",
+      liveLink: "https://edusity-beige.vercel.app/",
+      repoLink: "https://github.com/mazax28/edusity",
     },
   ];
 
