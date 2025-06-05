@@ -54,33 +54,13 @@ function Projects() {
       repoLink: "https://github.com/mazax28/crypto-tracking",
     },
     {
-      title: "Shopper",
-      description: "API para productos, carritos y pagos, integrando Stripe para compras seguras.",
-      technologies: ["React","CSS"],
-      liveLink: "https://shopper-ten-delta.vercel.app/",
-      repoLink: "https://github.com/mazax28/shopper",
-    },
-    {
       title: "Tomato",
       description: "Aplicación de chat en tiempo real con soporte para múltiples salas.",
       technologies: ["React","CSS"],
       liveLink: "https://tomato-wine-iota.vercel.app/",
       repoLink: "https://github.com/mazax28/tomato",
     },
-    {
-      title: "RoyalX",
-      description: "Aplicación de chat en tiempo real con soporte para múltiples salas.",
-      technologies: ["React","CSS"],
-      liveLink: "https://royal-x-phi.vercel.app/",
-      repoLink: "https://github.com/mazax28/RoyalX",
-    },
-    {
-      title: "Edusity",
-      description: "Aplicación de chat en tiempo real con soporte para múltiples salas.",
-      technologies: ["React","CSS"],
-      liveLink: "https://edusity-beige.vercel.app/",
-      repoLink: "https://github.com/mazax28/edusity",
-    },
+
   ];
 
   return (
